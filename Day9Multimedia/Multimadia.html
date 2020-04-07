@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="">
+<head>
+    <meta charset="UTF-8">
+    <title>Multimedia</title>
+    <link rel="icon" href="13.ico" type="image/x-icon">
+    <script src="Scripts/AC_ActiveX.js" type="text/javascript"></script>
+    <script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+</head>
+<body bgcolor="#6495ed">
+    <!--embed下添加动态图片 wmode可以实现透明度 width和height调整大小-->
+    <embed src="xm.gif" wmode="transparent">
+
+    <!--object下添加动态图片 data为目标文件 type为文件类型-->
+    <object data="xm.gif" type="application/gif">
+        <!--param下name为标签名 value为文件名-->
+        <param name="src" value="xm.gif">
+        <param name="wmode" value="transparent">
+    </object>
+
+    <!--以下音乐的实现和上面基本相同 src下可以换其他类型的文件也可以-->
+    <embed src="music.mp3" autostart="false" loop="1">
+
+
+    <script type="text/javascript">
+        AC_AX_RunContent( 'src','music.mp3' ); //end AC code
+    </script>
+
+    <noscript>
+    <object src="music.mp3">
+        <param name="src" value="music.mp3">
+    </object>
+    </noscript>
+</body>
+</html>

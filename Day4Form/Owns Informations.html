@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Informations</title>
+</head>
+<!--思路:-->
+<!--1:个人觉得center比caption更加好用 在table标签外设置好参数放到一边不管即可-->
+<!--2:table标签下设置一系列需要的参数-->
+<!--3:tr+td来设置具体的参数----按照图片的参数进行输入-->
+<!--4:重点运用的属性有 rowspan colspan height-->
+<!--rowspan和colspan为此项目的两个重点属性-->
+<!--分别作用为向下移动,和向右移动-->
+<!--td属性下使用height来设置最后个人简历部分的高度！！！-->
+<body>
+    <center>
+    <b><font size="6"color="#6495ed">个人简历表格</font></b>
+    </center>
+    <table  bordercolor="blue"align="Center" border="1" width="800" height="400">
+        <tr align="center">
+            <td>姓名</td>
+            <td>小明</td>
+            <td>性别</td>
+            <td>男</td>
+            <td rowspan="5">照片</td>
+        </tr>
+        <tr align="center">
+            <td>生日</td>
+            <td>7.10</td>
+            <td>身高</td>
+            <td>170cm</td>
+        </tr>
+        <tr align="center">
+            <td>官籍</td>
+            <td>大陆</td>
+            <td>民族</td>
+            <td>汉族</td>
+        </tr>
+        <tr align="center">
+            <td>政治面貌</td>
+            <td>团员</td>
+            <td>毕业院校</td>
+            <td>浙江大学</td>
+        </tr>
+        <tr align="center">
+            <td>学历</td>
+            <td>本科</td>
+            <td>专业</td>
+            <td>软件开发</td>
+        </tr>
+        <tr align="center">
+            <td>联系电话</td>
+            <td>188888888</td>
+            <td>电子邮件</td>
+            <td colspan="2">170325235@HTOMAIL.COM</td>
+        </tr>
+        <tr align="center">
+            <td>邮编</td>
+            <td>71300</td>
+            <td>地址</td>
+            <td colspan="2">江苏淮安</td>
+        </tr>
+        <tr align="center">
+            <td height="100">个人简历</td>
+            <td height="100" colspan="4">活泼可爱 积极向上</td>
+        </tr>
+
+
+    </table>
+    <p><center><font size="2" color="#8b0000">
+        18计中一<br>
+        郝国斌<br>
+        <u>Power with Kinoz From HuaiAn High Technology School</u>
+    </font></center></p>
+</body>
+</html>
